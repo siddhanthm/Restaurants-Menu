@@ -1,0 +1,111 @@
+body{
+	margin-top: 0;
+ 	font-family: sans-serif;
+ 	background-color: #333333;
+}
+
+.title{
+	font-size: 4vw;
+	text-align: center;
+	color: #f07c17;
+	margin-top: 2vw;
+}
+
+.flash{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:  #f3f5f8;
+	text-align: center;
+}
+
+.flash{
+	text-align: center;
+	color: red;
+	font-size: 25px;
+}
+
+.formm{
+	margin-top: 2vw;
+	background-color: white;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.menu{
+	padding-left: 0px;
+}
+
+.back{
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.back a{
+	text-decoration: none;
+	font-size: 20px;
+}
+.back a:hover{
+	color: red;
+}
+
+.ubox{
+	padding-left: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f3f5f8;
+	margin-bottom: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.name {width:50%;display: inline-block; float: left; color: red;}
+.price {text-align: right; width:50%; float: right; }
+.description{
+	padding-left: 15px;
+}
+.edde{
+	display: flex;
+}
+.delete{
+	width: 50%;
+	text-align: right;
+}
+
+.Edit{
+	width: 50%;
+}
+a{
+	text-decoration: none;
+}
+
+.xtra{
+	display: flex;
+	padding-top: 5px;
+}
+
+.names{
+	width: 80%;
+	color: red;
+}
+.names a{
+	color: red;
+}
+
+.names a:hover{
+	color: gray;
+}
+
+.deletes{
+	width: 20%;
+	text-align: right;
+	vertical-align: middle;
+}

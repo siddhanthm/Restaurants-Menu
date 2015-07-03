@@ -1,0 +1,58 @@
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style_list.css') }}">
+</head>
+
+	
+<body>
+
+		<div class = 'title'>
+			{{ restaurant.name }}
+		</div>
+
+		<div class = 'flash'>
+			{% with messages = get_flashed_messages() %}
+     	 	{% if messages %}
+
+        	{% for message in messages %}
+            <p> {{ message }}</p>
+        	{% endfor %}
+        	{% endif %}
+   		 	{% endwith %}
+
+		</div>
+		<div class="formm menu">
+			<div class ="back">
+				<a href = '{{url_for('newMenuItem', restaurant_id = restaurant.id) }}'>Create New Item</a>
+			</div>
+			{% for i in items %}
+			<div class = "ubox">
+			    <div class = 'nameAndPrice'>
+					<span class = 'name'><p>{{i.name}}</p></span>
+
+					<span class = 'price'>
+						<p>{{i.price}} </p>
+					</span>
+				</div>
+				<div class = 'description'>
+					<p>{{i.description}}</p>
+				</div>
+				<div class="edde">
+					<div class="Edit">
+						<a href="{{url_for('editMenuItem',restaurant_id = restaurant.id, Menu_ID=i.id)}}" >Edit</a>
+					</div>
+					<div class="delete">
+						<a href="{{url_for('deleteMenuItem', restaurant_id = restaurant.id, Menu_ID=i.id)}}"> Delete</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+
+			<div class="back"> 
+				<a href = "{{url_for('restaurants')}}">View all restaurants</a>
+			</div>
+		</div>
+
+</body>
+</html>
+		
